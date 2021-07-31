@@ -1,0 +1,111 @@
+.health-worker-table{
+    margin-left: 20%;
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.total-card{
+    margin: 3% 0 0 20%;
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    width: 20vw;
+    height: 17vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+th, td {
+    padding: .5em;
+}
+th{
+    background-color: #0000001e;
+}
+.create-worker{
+    margin: 5% 0 1% 73%;
+    color: #ffffff;
+    background-color: #201a56;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+}
+.link{
+    color: #ffffff;
+}
+.link:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+.view-details{
+    border: none;
+    border-radius: 5px;
+    background: #201a56;
+    color: #ffffff;
+    height: 6vh;
+    width: 10vw;
+}
+.health-worker-form{
+    width: 70vw;
+    height: 95vh;
+    margin-left: 15%;
+    margin-top: 2%;
+    background-color: #ffffff;
+    padding: 1em;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+input, select {
+    background-color: #f4f4f4;
+    padding: .3em ;
+    border: 1px solid #0000001e;
+    height: 4vh;
+}
+option{
+    background: #ffffff;
+    color: #000000;
+}
+label {
+    margin-top: 3%;
+    font-size: .7em;
+    padding-bottom: .3em;
+    display: flex;
+    justify-content: flex-start;
+    color: #1d1d1d99;
+}
+.register{
+    background: #201A56;
+    color: #ffffff;
+    padding: .5em;
+    border: none;
+    border-radius: 5px;
+    margin: 5% 0 0 43%;
+    width: 15%
+}
+.bg-modal, .suspend-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: auto;
+}
+.close-form{
+    position: absolute;
+    top: 4%;
+    right: 16%;
+    font-size: 2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.inner{
+    display: flex;
+    justify-content: space-around;
+}

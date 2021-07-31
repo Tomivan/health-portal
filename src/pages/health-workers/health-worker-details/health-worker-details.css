@@ -1,0 +1,65 @@
+.profile-container{
+    margin: 1% 0 0 20%;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    width: 70%;
+}
+.back-link{
+    margin: 4% 0 0 20%;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+.suspend, .activate, .delete, .notify, .assign, .unassign{
+    color: #ffffff;
+    height: 5vh;
+    margin-top: 3%;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    font-weight: bold;
+}
+.notify{
+    background-color: blue;
+}
+.suspend{ 
+    background: yellowgreen;
+}
+.activate{
+    background: turquoise;
+}
+.delete{
+    background: tomato;
+}
+.second{
+    margin-left: 30%;
+    width: 80%
+}
+.notification-form, .suspend-form{
+    margin-left: 37%;
+    margin-top: 15%;
+    background: #ffffff;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1.5em;
+}
+.close-notification{
+    position: absolute;
+    top: 31%;
+    right: 34%;
+    font-size: 2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.profile-picture{
+    width: 8vw;
+    height: 15vh;
+    position: absolute;
+    left: 80%;
+    top: 25%;
+}

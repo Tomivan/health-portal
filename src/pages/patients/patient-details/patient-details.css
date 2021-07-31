@@ -1,0 +1,20 @@
+.assign, .unassign{
+    background-color: teal;
+}
+.buttons{
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+}
+.assign-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 37%;
+    margin-top: 15%;
+    background: #ffffff;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1.5em;
+}
