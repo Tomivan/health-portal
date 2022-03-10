@@ -39,7 +39,6 @@ const ResetPassword = (data) => {
     return (
         <div>
              <form onSubmit={handleSubmit(resetPassword)}className="password-form">
-                <img src={require('../../../assets/images/logo.svg')} alt="super admin" className="Logo"/>
                 <h3>Reset password</h3>
                 <label>Password</label>
                 <input type="text" name="password" onChange={handleChange} ref={register({required: "Required"})} className="input"/>

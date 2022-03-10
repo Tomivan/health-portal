@@ -35,7 +35,7 @@ const PatientDetails = (props) => {
                     console.log(err)
                 }
             )
-    },[])
+    })
     useEffect(() => {
         fetch('https://freemind-api.herokuapp.com/v1/admin/care-taker',  {
             method: "get",

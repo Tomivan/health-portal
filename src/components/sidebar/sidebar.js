@@ -5,7 +5,7 @@ import './sidebar.css';
 import { StyledSideNav } from './styles';
 
 const items = [
-    { name: 'Dasboard', path: '/dashboard' },
+    { name: 'Dashboard', path: '/dashboard' },
     { name: 'Medical Records', path: '/medical-records' },
     { name: 'Patients', path: '/patients' },
     { name: 'Health Workers', path: '/health-workers' },
@@ -27,8 +27,7 @@ const Sidebar = () => {
     return(
         <StyledSideNav isFixedNav expanded isChildOfHeader={false} aria-label="Side Navigation" class="sidenav">
            <div className="nav-heading">
-               <img src={require('../../assets/images/logo.svg')} alt="super admin" className="super-admin"/>
-               <h2 className="h2">Freemind</h2>
+               <h2 className="h2">Premium Health</h2>
            </div>
             <SideNavItems>
             {items.map(i => (
@@ -45,7 +44,7 @@ const Sidebar = () => {
         ))}
             </SideNavItems>
             <div className="profile-card">
-                <img src={require("../../assets/images/user.svg")} alt="user" onClick={displayBox}/>
+                <img src={require("../../assets/images/user.png")} alt="user" onClick={displayBox}/>
                 <div className="info-box">
                     <Link to="/profile" className="profile-link">Profile</Link>
                     <Link to="/" className="profile-link" onClick={() => localStorage.clear()}>Logout</Link>

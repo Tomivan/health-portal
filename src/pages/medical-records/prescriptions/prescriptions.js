@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import Layout from '../../../components/layout/layout';
-import './prescription.css';
+import './prescriptions.css';
 
 const Prescription = (props) =>{
     const data = props.location.state;

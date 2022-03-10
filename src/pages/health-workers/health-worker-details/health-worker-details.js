@@ -32,7 +32,7 @@ const HealthworkerDetails = (props) => {
                     console.log(err)
                 }
             )
-    },[state.status])
+    })
     const suspendHealthWorker = () => {
         const status = stat === 'suspended' ? "suspended": "active"
         setIsLoading(true);
@@ -179,7 +179,7 @@ const HealthworkerDetails = (props) => {
                             <td className="second">{data.bio}</td>
                         </tr>
                         <tr>
-                            <td><img src={!data.profilePicture ? require('../../../assets/images/user.svg') : data.profilePicture} alt="Profile" className="profile-picture"/></td>
+                            <td><img src={!data.profilePicture ? require('../../../assets/images/user.png') : data.profilePicture} alt="Profile" className="profile-picture"/></td>
                         </tr>
                     </table>
                     <div className="actions">

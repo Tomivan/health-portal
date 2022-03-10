@@ -35,7 +35,6 @@ const LoginForm = () => {
     return(
         <div>
              <form onSubmit={handleSubmit(login)}className="login-form">
-                <img src={require('../../assets/images/logo.svg')} alt="freemind-logo" className="logo"/>
                 <h3>Login</h3>
                 <label>Email address</label>
                 <input type="text" name="email" onChange={handleChange} ref={register({required: "Required"})} className="input"/>

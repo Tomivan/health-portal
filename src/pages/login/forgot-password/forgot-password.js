@@ -34,7 +34,6 @@ const ForgotPassword = () => {
     return (
         <div>
              <form onSubmit={handleSubmit(forgotPassword)}className="password-form">
-                <img src={require('../../../assets/images/logo.svg')} alt="super admin" className="Logo"/>
                 <h3>Forgot password</h3>
                 <label>Email address</label>
                 <input type="text" name="email" onChange={handleChange} ref={register({required: "Required"})} className="input"/>

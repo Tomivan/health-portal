@@ -32,7 +32,7 @@ const Profile = (data) =>{
                 }
                 
             )
-    },[])
+    })
     const changePassword = () => {
         fetch('https://freemind-api.herokuapp.com/v1/admin/auth/update-password', {
             method: "post",
