@@ -4,7 +4,7 @@ import './notifications.css';
 import Layout from '../../components/layout/layout';
 
 const Notifications = () => {
-    const {handleSubmit, handleChange, register, reset } = useForm([]);
+    const {handleSubmit, register, reset } = useForm([]);
     const [isLoading, setIsLoading] = useState(false);
     const sendNotification =  (data) => {
         setIsLoading(true);
@@ -40,9 +40,9 @@ const Notifications = () => {
         <div className="notification">
         <form onSubmit={handleSubmit(sendNotification)} className="form">
             <label>Title</label>
-            <input type="text" name="title" onChange={handleChange} ref={register({required: "Required"})} className="n-input"/>
+            <input type="text" name="title" {...register("title",{required: true})} className="n-input"/>
             <label>Message</label>
-            <textarea type="text" name="body" onChange={handleChange} ref={register({required: "Required"})} className="n-input"/>
+            <textarea type="text" name="body" {...register("body",{required: true})} className="n-input"/>
             <button className="n-button">
                {isLoading && (
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />

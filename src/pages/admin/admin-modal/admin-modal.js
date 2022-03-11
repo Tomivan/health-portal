@@ -1,34 +1,9 @@
-import React, {useState, useEffect } from 'react';
-import { navigate } from '@reach/router'
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import './admin-modal.css';
 
 const AdminModal = () => {
-    const {handleSubmit, handleChange, register, reset, errors } = useForm([]);
-    const [state, setState] = useState(null);
-    useEffect(() => {
-        fetch('https://freemind-api.herokuapp.com/v1/admin/roles/all',  {
-            method: "get",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + localStorage.getItem('token')
-            },
-        })
-        .then(resp => resp.json())
-            .then(
-                response => {
-                    console.log(response.data)
-                    setState(response)
-                    if(response.error === "Invalid token"){
-                        navigate(`/`);
-                    }
-                },
-                err => {
-                    console.log(err)
-                }
-            )
-    }, [])
+    const {handleSubmit, register, reset, errors } = useForm([]);
     const registerAdmin =  (data) => {
         fetch('https://freemind-api.herokuapp.com/v1/admin/admin/create', {
             method: "post",
@@ -61,23 +36,21 @@ const AdminModal = () => {
             <>
             <form onSubmit={handleSubmit(registerAdmin)} className="admin-form">
                 <label>Full Name</label>
-                <input type="text" name="fullName" onChange={handleChange} ref={register({required: "Required"})} />
+                <input type="text" name="fullName"  {...register("fullName",{required: true})} />
                 <label>Phone Number</label>
-                <input type="text" name="phoneNumber" onChange={handleChange} ref={register({required: "Required"})}/>
+                <input type="number" name="phoneNumber" {...register("phoneNumber", {required: true})}/>
                 <label>Email Address</label>
-                <input type="email" name="email" onChange={handleChange}
-                    ref={register({
-                    required: "Required", pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                    message: "invalid email address" }
+                <input type="email" name="email"
+                    {...register("email",{
+                    required: true, 
+                    pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i, message: "invalid email address" }
                     })}/>
                     {errors.email && errors.email.message}
                 <label className="role">Role</label>
-                <select name="role" onChange={handleChange} ref={register({required: "Required"})}>
+                <select name="role" {...register("role",{required: true})}>
                 <option value=""> Select role</option>
-                {state && state.data.map( data => (
-                <option key={data._id} value={data._id}>
-                    {data.name}
-                </option>))}
+                <option value="admin">Admin</option>
+                <option value="superAdmin">Super Admin</option>
                 </select>
                 <button className="register-admin"> Register</button>
             </form>

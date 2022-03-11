@@ -4,7 +4,7 @@ import { Link, navigate } from '@reach/router';
 import './login.css';
 
 const LoginForm = () => {
-    const {handleSubmit, handleChange, register} = useForm([]);
+    const {handleSubmit, register} = useForm([]);
     const [isLoading, setIsLoading] = useState(false);
     const login = (data) => {
         setIsLoading(true);
@@ -37,9 +37,9 @@ const LoginForm = () => {
              <form onSubmit={handleSubmit(login)}className="login-form">
                 <h3>Login</h3>
                 <label>Email address</label>
-                <input type="text" name="email" onChange={handleChange} ref={register({required: "Required"})} className="input"/>
+                <input type="text" name="email" {...register("email",{required: true})} className="input"/>
                 <label>Password</label>
-                <input type="password" name="password" onChange={handleChange} ref={register({required: "Required"})} className="input"/>
+                <input type="password" name="password" {...register("password", {required: true})} className="input"/>
                 <button className="login-button" disabled={isLoading}> 
                 {isLoading && (
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />

@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 import './forgot-password.css';
 
 const ForgotPassword = () => {
-    const {handleChange, handleSubmit, register} = useForm([]);
+    const {handleSubmit, register} = useForm([]);
     const [isLoading, setIsLoading] = useState(false);
     const forgotPassword = (data) => {
         setIsLoading(true);
@@ -36,7 +36,7 @@ const ForgotPassword = () => {
              <form onSubmit={handleSubmit(forgotPassword)}className="password-form">
                 <h3>Forgot password</h3>
                 <label>Email address</label>
-                <input type="text" name="email" onChange={handleChange} ref={register({required: "Required"})} className="input"/>
+                <input type="text" name="email" {...register("email",{required: true})} className="input"/>
                 <button className="login-button"> 
                 {isLoading && (
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />

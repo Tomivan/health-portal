@@ -5,7 +5,7 @@ import './profile.css';
 import Layout from '../../../components/layout/layout';
 
 const Profile = (data) =>{
-    const {handleSubmit, handleChange, register} = useForm([]);
+    const {handleSubmit, register} = useForm([]);
     const [state, setState] = useState(null);
     const adminId = data._id;
 
@@ -67,9 +67,9 @@ const Profile = (data) =>{
             <form onSubmit={handleSubmit(changePassword)} className="profile-form">
                 <p> Change your password</p>
                     <label>Password</label> 
-                    <input type="password" name="password" onChange={handleChange} ref={register({required: "Required"})} className="profile-input"/>
+                    <input type="password" name="password" {...register("password",{required: true})} className="profile-input"/>
                     <label>New Password</label>
-                     <input type="password" name="newPassword" onChange={handleChange} ref={register({required: "Required"})} className="profile-input"/>
+                     <input type="password" name="newPassword" {...register("newPassword",{required: true})} className="profile-input"/>
                 <button className="profile-button"> Save Changes</button>
             </form>
         </div>

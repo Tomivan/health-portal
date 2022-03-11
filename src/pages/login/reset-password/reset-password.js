@@ -4,7 +4,7 @@ import { navigate } from '@reach/router';
 import './reset-password.css';
 
 const ResetPassword = (data) => {
-    const {handleChange, handleSubmit, register} = useForm([]);
+    const {handleSubmit, register} = useForm([]);
     const [isLoading, setIsLoading] = useState(false);
     const resetPassword = (data) => {
         setIsLoading(true);
@@ -41,7 +41,7 @@ const ResetPassword = (data) => {
              <form onSubmit={handleSubmit(resetPassword)}className="password-form">
                 <h3>Reset password</h3>
                 <label>Password</label>
-                <input type="text" name="password" onChange={handleChange} ref={register({required: "Required"})} className="input"/>
+                <input type="text" name="password" {...register("password",{required: true})} className="input"/>
                 <button className="login-button">  {isLoading && (
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
                 )}Reset Password</button>
