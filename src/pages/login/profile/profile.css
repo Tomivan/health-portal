@@ -1,0 +1,33 @@
+.Profile{
+    margin-left: 20%;
+    margin-top: 2%;
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1em;
+    width: 75vw;
+}
+.profile-form{
+    display: flex;
+    flex-direction: column;
+}
+.show-password{
+    color: #201a56;
+    text-decoration: underline;
+    margin-top: 3%;
+    cursor: pointer;
+    width: 15vw;
+}
+.profile-input{
+    width: 30vw;
+}
+.profile-button{
+    margin-top: 3%;
+    color: #ffffff;
+    background-color: #201a56;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+    width: 10vw;
+}

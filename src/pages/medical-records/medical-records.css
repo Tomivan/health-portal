@@ -1,0 +1,9 @@
+.medical-table{
+    margin: 10% 0 0 20%;
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    width: 75vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}

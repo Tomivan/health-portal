@@ -1,0 +1,35 @@
+.login-form{
+    margin-left: 37%;
+    margin-top: 10%;
+    background: #ffffff;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1.5em;
+}
+h3{
+    text-align: center;
+    font-size: 1.75rem;
+}
+.input{
+    width: 100%;
+}
+.login-button{
+    color: #ffffff;
+    background: #201A56;
+    width: 50%;
+    height: 5vh;
+    margin: 5% 0 0 25%;
+    border: none;
+    border-radius: 5px;
+}
+.spinner-border-sm{
+    color: #ffffff;
+}
+.password{
+    margin-top: 10%;
+}
+.password-link{
+    margin-left: 27%;
+}
