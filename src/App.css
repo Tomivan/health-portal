@@ -1,0 +1,227 @@
+body {
+  background: #f4f4f4;
+  font-size: 16px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .login-form{
+      width: 80%;
+      margin: 30% 0 0 10%;
+  }
+  .login-button{
+      width: 70%;
+      margin-left: 15%;
+  }
+  .password-link{
+      margin-left: 15%;
+  }
+  .total-card{
+      width: 60vw;
+      height: 25vh;
+      margin: 10% 0 0 5%;
+  }
+  h4{
+      font-size: 1.1em;
+  }
+  .create-worker{
+      width: 50vw;
+      height: 7vh;
+      margin-left: 5%;
+      margin-bottom: 5%;
+  }
+  .health-worker-form{
+      margin-left: 5%;
+      width: 50%;
+  }
+  .health-worker-table{
+      width: 100%;
+      margin-left: 5%;
+  }
+  t-head, t-body{
+      overflow-x: scroll;
+  }
+  .profile-container{
+      width: 100%;
+      margin-left: 5%;
+  }
+  .heading, .back-link{
+      margin-left: 5%;
+  }
+  .actions{
+      flex-direction: column;
+  }
+  .notify, .suspend, .activate, .delete{
+      width: 50%;
+      height: 7vh;
+      margin-left: 15%;
+  }
+  .notification-form, .suspend-form{
+      width: 70%;
+      margin-left: 5%;
+      margin-top: 47%;
+  }
+  .close-notification{
+      right: 28%;
+  }
+  .cards{
+      margin-left: 5%;
+  }
+  .cards-top{
+      flex-direction: column;
+  }
+  .cards-info, .card-info, .total-admin{
+      width: 80%;
+      height: 22vh;
+  }
+  .medical-table{
+      margin-left: 5%;
+  }
+  .view-details{
+     height: 10vh;
+     width: 35vw;
+  }
+  .patient-table{
+      margin:5% 0 0 5%;
+  }
+  .admin{
+      margin-left: 5%
+  }
+ .create-admin-profile{
+     margin: 5% 0;
+ }
+ .no-content{
+     margin-left: 5%;
+     height: 20vh;
+ }
+ .create-admin{
+     height: 7vh;
+ }
+ .admin-form{
+     margin-left: 5%;
+     margin-top: 20%;
+     width: 50%;
+     height: 75vh;
+ }
+ .total-admin{
+     margin-top: 10%;
+ }
+ .close-admin-form{
+     top: 11%;
+     right: 47%;
+ }
+ .register-admin{
+     width: 50%;
+     margin-left: 25%;
+     height: 7vh;
+ }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .bx--side-nav__navigation{
+      width: 28%;
+  }
+  .profile-card{
+      width: 12vw;
+  }
+  .dashboard-section, .medical-section, .notification-section,.profile, .profile-container,.prescription-section{
+      margin-left: 17%;
+  }
+  .admin-section{
+      margin-left: 20%;
+  }
+  .total-card, .total-admin{
+      width: 40vw;
+      margin-bottom: 5%;
+  }
+  .medical-table{
+      margin-left: 32%;
+  }
+  .patients, .patients-section, .health-section{
+      margin-left: 23%;
+  }
+  .view-details{
+      width: 20vw;
+  }
+  .create-worker{
+      margin-left: 157%;
+      margin-bottom: 3%;
+      width: 20vw;
+  }
+  .create-admin-profile{
+      margin-left: 110%;
+      margin-bottom: 3%;
+      width: 20vw;
+  }
+  .notification form{
+      width: 60%;
+      margin-left: 35%;
+      margin-top: 20%;
+  }
+  .admin-form{
+      width: 60%;
+      margin-left: 17%;
+      margin-top: 20%;
+  }
+  .close-admin-form{
+      top: 15%;
+      right: 25%;
+      font-size: 2.7em;
+  }
+  .register-admin{
+      width: 30vw;
+      margin-left: 25%;
+  }
+  .health-worker-form{
+      width: 70%;
+      margin-left: 20%;
+      margin-top: 15%;
+      height: 80vh;
+  }
+  .create-worker{
+      margin-left: 138%;
+      width: 25vw;
+  }
+  .close-form{
+      top: 10.5%;
+      right: 12%;
+      font-size: 2.7em;
+  }
+  .login-form{
+      width: 75%;
+      margin-left: 13%;
+      margin-top: 25%;
+  }
+  .password-link{
+      margin-left: 38%;
+  }
+  .delete{
+      width: 15vw;
+  }
+  .profile-container{
+      width: 80%;
+  }
+  .notify{
+      height: 7vh;
+      width: 15vw;
+  }
+  .Profile{
+      margin-left: 33%;
+  }
+  .profile-button{
+      width: 18vw;
+  }
+  .show-password{
+      width: 25vw;
+  }
+  .info-box{
+      width: 15vw;
+  }
+  .notification-form,.suspend-form{
+      width: 60%;
+      margin-left: 27%;
+      margin-top: 15%;
+  }
+  .close-notification{
+      position: absolute;
+      top: 11%;
+      right: 15%;
+  }
+}
