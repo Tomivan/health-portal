@@ -1,0 +1,21 @@
+.admin-form{
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin: 10% 0 0 35%;
+    height: 64vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.register-admin {
+    border: none;
+    border-radius: 5px;
+    width: 9vw;
+    height: 5vh;
+    margin: 5% 0 0 68%;
+    background: #201a56;
+    color: #ffffff;
+}

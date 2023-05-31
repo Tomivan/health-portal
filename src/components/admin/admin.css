@@ -1,0 +1,54 @@
+.heading{
+    margin: 2% 0 0 20%;
+    font-size: 1.8rem;
+    color: #201A56;
+}
+.no-content {
+    text-align: center;
+    margin: 10% 0 0 20%;
+    width: 75%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: #ffffff;
+    padding: .5em;
+}
+.create-admin, .create-admin-profile {
+    background: #201A56;
+    color: #ffffff;
+    padding: .5em;
+    border: none;
+    border-radius: 5px;
+}
+.create-admin{
+    margin-top: 3%;
+    height: 5vh;
+}
+.total-admin{
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    width: 20vw;
+    height: 17vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.admin{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.admin-table{
+    background: #ffffff;
+    margin-top: 2%;
+    width: 70vw;
+}
+.create-admin-profile{
+    margin-left: 70%;
+}
+.close-admin-form{
+    position: absolute;
+    top: 18%;
+    right: 36%;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
