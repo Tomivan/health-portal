@@ -4,7 +4,7 @@ import HealthworkerDetails from "../components/health-worker-details/health-work
 
 const HealthWorkerDetailsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <HealthworkerDetails />
         </div>

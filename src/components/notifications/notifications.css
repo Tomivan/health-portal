@@ -1,22 +1,22 @@
 .form{
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 5%;
     background: #ffffff;
-    width: 58%;
+    width: 100%;
     border: none;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     padding: 1.5em;
 }
 .n-input{
-    width: 55vw;
+    width: 40vw;
 }
 .n-button{
     color: #ffffff;
     background: #201A56;
-    width: 20%;
+    width: 50%;
     height: 5vh;
     margin: 5% 0 0 15%;
     border: none;

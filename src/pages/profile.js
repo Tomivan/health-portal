@@ -4,7 +4,7 @@ import Profile from "../components/profile/profile.component";
 
 const ProfilePage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <Profile />
         </div>

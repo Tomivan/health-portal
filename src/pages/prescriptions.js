@@ -4,7 +4,7 @@ import Prescription from "../components/prescriptions/prescriptions.component";
 
 const PrescriptionsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <Prescription />
         </div>

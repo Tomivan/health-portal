@@ -4,7 +4,7 @@ import CaretakerDetails from "../components/caretaker-details/caretaker-details.
 
 const CaretakerDetailsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <CaretakerDetails />
         </div>

@@ -4,7 +4,7 @@ import AdminDetails from "../components/admin-details/admin-details.component";
 
 const AdminDetailsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <AdminDetails />
         </div>

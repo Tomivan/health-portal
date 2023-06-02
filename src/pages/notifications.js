@@ -4,7 +4,7 @@ import Notifications from "../components/notifications/notifications.component";
 
 const NotificationsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <Notifications />
         </div>

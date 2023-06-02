@@ -4,7 +4,7 @@ import Patients from "../components/patients/patients.component";
 
 const PatientsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <Patients />
         </div>

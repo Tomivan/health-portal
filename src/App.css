@@ -2,6 +2,9 @@ body {
   background: #f4f4f4;
   font-size: 16px;
 }
+.flex{
+    display: flex;
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .login-form{
       width: 80%;

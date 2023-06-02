@@ -4,7 +4,7 @@ import Caretaker from "../components/caretaker/caretaker.component";
 
 const CaretakerPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <Caretaker />
         </div>

@@ -4,7 +4,7 @@ import PatientDetails from "../components/patient-details/patient-details.compon
 
 const PatientDetailsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <PatientDetails />
         </div>

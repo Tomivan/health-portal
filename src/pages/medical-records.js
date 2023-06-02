@@ -4,7 +4,7 @@ import MedicalRecords from "../components/medical-records/medical-records.compon
 
 const MedicalRecordsPage = () => {
     return(
-        <div>
+        <div className="flex">
             <Sidebar />
             <MedicalRecords />
         </div>
