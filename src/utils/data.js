@@ -1,27 +1,35 @@
 export const MOCK_DATA = [
     {
+        totalAdmin: 4,
         adminData:[ 
             {
             name: "Oluwatosin Omoboyejo",
             email: "oluwatosinracheal@yahoo.com",
-            phoneNumber: "2514262819",
+            phoneNumber: "02514262819",
             role: " Super Admin"
         },
         {
             name: "Damilola Falade",
             email: "iyanufalay@gmail.com",
-            phoneNumber: "2514262819",
+            phoneNumber: "02514262819",
             role: "Admin"
         },
         {
             name: "Abisola Ojikutu",
             email: "bisolaojiks@gmail.com",
-            phoneNumber: "923843820",
+            phoneNumber: "09023843820",
+            role: "Admin"
+        },
+        {
+            name: "Adaobi Umeh",
+            email: "adaumeh@gmail.com",
+            phoneNumber: "08072920306",
             role: "Admin"
         }
     ]
     },
     {
+        totalCaretakers: 3,
         caretakerData: [
             {
                 firstname: "Toluwalase",
@@ -44,6 +52,7 @@ export const MOCK_DATA = [
         ]
     },
     {
+        totalHealthWorkers: 3,
         healthData: [
             {
                 firstname: "Esther",
@@ -95,7 +104,7 @@ export const MOCK_DATA = [
                 prescriptions: [
                     {
                         treatment: "Brain surgery to remove cancerous cells",
-                        recoveryPeriod: "1 week"
+                        recoveryPeriod: "1 month"
                     }
                 ]
             },
@@ -121,34 +130,82 @@ export const MOCK_DATA = [
                     }
                 ]
             },
+            {
+                healthWorker: "Damilola Adegbenro",
+                patient: "Abigail Julius",
+                note: "Diagnosed with Parkinsons",
+                prescriptions: [
+                    {
+                        treatment: "Managed throughout lifetime",
+                        recoveryPeriod: "Managed throughout lifetime"
+                    }
+                ]
+            },
+            {
+                healthWorker: "Oluwaseun akinola",
+                patient: "Ihunanya Okonkwo",
+                note: "Diagnosed with coronary artery disease",
+                prescriptions: [
+                    {
+                        treatment: "Angioplasty",
+                        recoveryPeriod: "Weeks"
+                    }
+                ]
+            },
         ]
     },
-    {
-        patientData: [
+    {   
+        totalPatients: 5,
+        patientData: 
+        [
             {
-                "username": "adetB",
-                "email": "adebisiboluwatife@gmail.com",
-                "gender": "Female",
-                "type": "basic",
-                "location":"Igando, Lagos State",
-                "status": "suspended"
+                username: "adetB",
+                email: "adebisiboluwatife@gmail.com",
+                gender: "Female",
+                type: "basic",
+                location:"Igando, Lagos State",
+                status: "suspended"
             },
             {
-                "username": "christy",
-                "email": "christypraise@gmail.com",
-                "gender": "Female",
-                "type": "pro",
-                "location":"Gbagada, Lagos State",
-                "status": "active"
+                username: "christy",
+                email: "christypraise@gmail.com",
+                gender: "Female",
+                type: "pro",
+                location:"Gbagada, Lagos State",
+                status: "active"
             },
             {
-                "username": "kimbie",
-                "email": "funmiolugbode@gmail.com",
-                "gender": "Female",
-                "type": "premium",
-                "location":"Surulere, Lagos State",
-                "status": "active"
+                username: "kimbie",
+                email: "funmiolugbode@gmail.com",
+                gender: "Female",
+                type: "premium",
+                location:"Surulere, Lagos State",
+                status: "active"
+            },
+            {
+                username: "herbeegurl",
+                email: "abigailJulius@gmail.com",
+                gender: "Female",
+                type: "pro",
+                location:"Yaba, Lagos State",
+                status: "suspended"
+            },
+            {
+                username: "Batman",
+                email: "ihunanyaokonkwo@gmail.com",
+                gender: "Female",
+                type: "premium",
+                location:"Ebute-Metta, Lagos State",
+                status: "active"
             }
         ]
+    },  
+    {
+        dashboard : {
+            healthWorkers: 3,
+            patients: 5,
+            bookedSessions: 20,
+            completedSessions: 15
+        }
     }
 ]

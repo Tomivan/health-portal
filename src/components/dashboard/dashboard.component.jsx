@@ -1,10 +1,10 @@
-import React, { useState} from 'react';
-import { navigate } from '@reach/router';
+import React from 'react';
+import { MOCK_DATA } from '../../utils/data';
 import ContentLoader from 'react-content-loader';
 import './dashboard.css';
 
+
 const Dashboard = () => {
-    const [state, setState] = useState(null);
     
     return (
         <div>
@@ -14,11 +14,11 @@ const Dashboard = () => {
                     <div className="cards-top">
                         <div className="card-info">
                             <h5>Total Health workers</h5>
-                            <p>{state.workers}</p>
+                            <p>{state.healthWorkers}</p>
                         </div>
                         <div className="card-info">
                             <h5>Total Patients Registered</h5>
-                            <p>{state.customer}</p>
+                            <p>{state.patients}</p>
                         </div>
                         <div className="card-info">
                             <h5>Booked Sessions</h5>
